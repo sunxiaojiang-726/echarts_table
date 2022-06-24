@@ -112,6 +112,7 @@ body {
 .monitor .inner {
   padding: 0.3rem 0;
   display: flex;
+  /* 设置主轴的方向为从上到下 */
   flex-direction: column;
 }
 .monitor .tabs {
@@ -120,16 +121,17 @@ body {
   display: flex;
 }
 .monitor .tabs a {
-  color: #1950c4;
+  color: #9fc419;
   font-size: 0.225rem;
   padding: 0 0.3375rem;
 }
 .monitor .tabs a:first-child {
   padding-left: 0;
+  /* 右边的小竖线是有边框 */
   border-right: 0.025rem solid #00f2f1;
 }
 .monitor .tabs a.active {
-  color: #fff;
+  color: pink;
 }
 .monitor .content {
   flex: 1;
@@ -164,6 +166,7 @@ body {
 .monitor .row .icon-dot {
   position: absolute;
   left: 0.2rem;
+  /* 设置透明度为0 即完全透明*/
   opacity: 0;
 }
 .monitor .row:hover {
@@ -193,6 +196,7 @@ body {
   0% {
   }
   100% {
+    /* 动画结束状态:marquee往上移动自己高度的一半 */
     transform: translateY(-50%);
   }
 }
@@ -246,11 +250,11 @@ body {
   padding: 0.2rem 0;
   margin: 0;
   font-size: 0.25rem;
-  color: #fff;
+  color: rgb(31, 139, 72);
   font-weight: 400;
 }
 .map .icon-cube {
-  color: #68d8fe;
+  color: #e2fe68;
 }
 .map .chart {
   flex: 1;
@@ -307,7 +311,7 @@ body {
   padding: 0 0.225rem;
   color: #1950c4;
   font-size: 0.225rem;
-  border-right: 0.025rem solid #00f2f1;
+  border-right: 0.025rem solid #f28900;
 }
 .order .filter a:first-child {
   padding-left: 0;
@@ -333,7 +337,7 @@ body {
 }
 .order span {
   display: block;
-  color: #4c9bfd;
+  color: #aafd4c;
   font-size: 0.2rem;
 }
 /* 销售区域 */
@@ -347,7 +351,7 @@ body {
 .sales h3 {
   height: 0.225rem;
   padding-right: 0.225rem;
-  border-right: 0.025rem solid #00f2f1;
+  border-right: 0.025rem solid #a39859;
 }
 .sales a {
   padding: 0.05rem;
@@ -373,7 +377,7 @@ body {
   position: absolute;
   left: 0.525rem;
   top: 0.225rem;
-  color: #4996f5;
+  color: #f54974;
   font-size: 0.175rem;
 }
 .sales .line {
@@ -402,16 +406,16 @@ body {
 }
 .channel h4 {
   color: #fff;
-  font-size: 0.4rem;
+  font-size: 0.3125rem;
   margin-bottom: 0.0625rem;
 }
 .channel small {
-  font-size: 50%;
+  font-size: 40%;
 }
 .channel span {
   display: block;
   color: #4c9bfd;
-  font-size: 0.175rem;
+  font-size: 0.125rem;
 }
 /* 季度区块 */
 .quarter .inner {
@@ -473,8 +477,8 @@ body {
   display: flex;
   flex-direction: column;
   width: 2.1rem;
-  color: #4c9bfd;
-  font-size: 0.175rem;
+  color: pink;
+  font-size: 0.2rem;
   vertical-align: middle;
 }
 .top .all ul {
@@ -488,7 +492,7 @@ body {
 .top .all li {
   overflow: hidden;
 }
-.top .all [class^="icon-"] {
+.top .all [class^='icon-'] {
   font-size: 0.45rem;
   vertical-align: middle;
   margin-right: 0.15rem;
@@ -505,7 +509,7 @@ body {
   float: right;
   font-style: normal;
   font-size: 0.175rem;
-  color: #0bace6;
+  color: #e6be0b;
 }
 .top .province s {
   display: inline-block;
@@ -513,10 +517,10 @@ body {
   text-decoration: none;
 }
 .top .province .icon-up {
-  color: #dc3c33;
+  color: #b20ac2;
 }
 .top .province .icon-down {
-  color: #36be90;
+  color: #36a3be;
 }
 .top .province .data {
   flex: 1;
@@ -547,14 +551,14 @@ body {
 }
 .top .province ul.sup li.active {
   color: #a3c6f2;
-  background-color: rgba(10, 67, 188, 0.2);
+  background-color: rgba(15, 86, 240, 0.2);
 }
 .top .province ul.sub {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   font-size: 0.15rem;
-  background-color: rgba(10, 67, 188, 0.2);
+  background-color: rgba(30, 60, 124, 0.2);
 }
 .top .province ul.sub li {
   color: #52ffff;
